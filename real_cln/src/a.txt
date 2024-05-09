@@ -1,0 +1,41 @@
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   try {
+  //     if (formData.imageUrls.length < 1)
+  //       return setError("You must upload at least one image");
+
+  //     setError(false);
+  // await handleImageSubmit();
+  //     const userRef = currentUser?.rest?._id;
+  //     const formDataToSend = {
+  //       ...formData,
+  //       userRef: userRef,
+  //     };
+  //     console.log(formDataToSend);
+
+  // const res = await createp({
+  //   data: formDataToSend,
+  // }).unwrap();
+  // navigate(`/listing/${data._id}`);
+  // toast.success(res.message, {
+  //   className: "toast-message",
+  // });
+
+  //     const res = await fetch("/api/listing/create", {
+  //       method: "POST",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //       body: JSON.stringify({
+  //         ...formData,
+  //         userRef: currentUser.rest._id,
+  //       }),
+  //     });
+  //     const data = await res.json();
+  //   } catch (err) {
+  //     toast.error(err?.data?.message || err.error, {
+  //       className: "toast-message",
+  //     });
+  //     setError(err.message);
+  //   }
+  // };

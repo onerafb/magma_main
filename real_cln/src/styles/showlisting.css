@@ -1,0 +1,121 @@
+.showlisting-main {
+  background-color: #27374d;
+  width: 100%;
+  height: fit-content;
+}
+.showlisting-container {
+  --max-width: 1110px;
+  --padding: 2rem;
+
+  width: min(var(--max-width), 100% - var(--padding));
+  margin-inline: auto;
+  /* height: 94vh; */
+  overflow-y: auto;
+  /* background-color: #fbbcbc; */
+}
+.showlisting-heading {
+  margin: 20px 0;
+  text-align: center;
+  color: white;
+}
+.showlisting-container-sub {
+  border: 1px solid rgb(205, 205, 205);
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  padding: 0 30px;
+}
+.showlisting-img {
+  width: 130px;
+  height: 100px;
+  object-fit: cover;
+  border: 1px solid rgb(202, 200, 200);
+}
+.showlisting-img-name-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  margin: 5px 0;
+}
+.showlisting-name {
+  width: 250px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  color: rgb(255, 255, 255);
+  text-transform: capitalize;
+}
+.show-listing-name-link {
+  text-decoration: none;
+}
+.showlisting-button-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.showlisting-bt-delete {
+  outline: none;
+  border: none;
+  padding: 5px 10px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+.showlisting-bt-edit {
+  outline: none;
+  border: none;
+  padding: 5px 10px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+@media (max-width: 767px) {
+  .showlisting-img-name-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0;
+  }
+
+  .showlisting-container-sub {
+    border: 1px solid rgb(80, 80, 80);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px 0;
+    padding: 0 30px;
+    width: 100%;
+  }
+
+  .showlisting-name {
+    text-align: center;
+  }
+
+  .showlisting-bt-edit {
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    margin-bottom: 10px;
+  }
+}

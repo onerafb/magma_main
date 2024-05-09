@@ -1,0 +1,144 @@
+header {
+  /* border-bottom: 1px solid rgb(194, 194, 194); */
+  /* position: relative; */
+  /* width: 100vw; */
+  /* background-color: transparent; */
+  padding: 0 3rem;
+  position: -webkit-sticky;
+  top: 0;
+  position: sticky;
+  z-index: 1111;
+  background-color: #0a3bceff;
+
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav {
+  visibility: visible;
+}
+.nav > ul {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+li {
+  list-style: none;
+  cursor: pointer;
+}
+.header-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #b7f69a; */
+  width: 100%;
+}
+.header-logo-img{
+  /* width: 100px; */
+  padding: 2px;
+  border: 1px solid white;
+}
+.header-link {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  transition: 200ms ease;
+  letter-spacing: 1px;
+}
+.header-link:hover {
+  text-decoration: #b7f69a wavy underline;
+  color: #b7f69a;
+}
+.header-div-childOne {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.bars {
+  outline: none;
+  border: none;
+  font-size: 22px;
+  background-color: transparent;
+  color: black;
+  display: none;
+  cursor: pointer;
+}
+.close {
+  outline: none;
+  border: none;
+  font-size: 24px;
+  background-color: transparent;
+  color: black;
+  display: none;
+  cursor: pointer;
+}
+.nav-user-img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.header-input-o {
+  width: 12rem;
+  padding: 5px 10px;
+  outline: none;
+  border: none;
+  color: #ffffff;
+  font-weight: 500;
+  letter-spacing: 1px;
+  background-color: rgba(217, 217, 217, 0.35);
+  border-radius: 5px;
+}
+.header-input-o::placeholder {
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  letter-spacing: 1px;
+}
+.logo {
+  color: white;
+}
+@media (max-width: 50em) {
+  /* less than 800px */
+  .bars {
+    display: block;
+    color: white;
+  }
+  .close {
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+  .nav {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 30px 50px;
+    border-radius: 5px;
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    transition: 300ms ease;
+    border: 0.5px solid rgb(206, 206, 206);
+  }
+  .nav-active {
+    transition: 300ms ease;
+    visibility: visible;
+    opacity: 1;
+  }
+  .nav > ul {
+    flex-direction: column;
+  }
+  .header-input {
+    display: none;
+  }
+  .header-link {
+    color: black;
+  }
+}

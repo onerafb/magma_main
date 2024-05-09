@@ -1,0 +1,130 @@
+.signup-main {
+  background-color: #27374D;
+  width: 100vw;
+  height: 100vh;
+
+}
+.signup-main-div{
+  --max-width: 1110px;
+  --padding: 2rem;
+
+  width: min(var(--max-width), 100% - var(--padding));
+  margin-inline: auto;
+  /* background-color: rgb(207, 240, 142); */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signup-main-div-two{
+  width: 350px;
+  height: fit-content;
+  /* background-color: violet; */
+  padding: 20px;
+  margin-top: 8rem;
+
+}
+.sign-up-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.signup-navigate-link {
+  color: rgb(146, 204, 249);
+  text-decoration: none;
+  cursor: pointer;
+}
+.input-signup{
+  width: 100%;
+  padding: 10px 10px;
+  outline: none;
+  border: none;
+  border-radius: 12px;
+  background-color: rgba(217, 217, 217, 0.121);
+  margin-bottom: 20px;
+  color: #FFFFFF;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.input-signup::placeholder{
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.signup-bt{
+  width: 100%;
+  padding: 7px 10px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background-color: #7091F5;
+  font-weight: 600;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.signin_error {
+  color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 400ms;
+}
+.line{
+  width: 100%;
+  height: 1px;
+  background-color: rgb(144, 144, 144);
+  margin-bottom: 10px;
+}
+.custom-shape-divider-bottom-1705946508 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1705946508 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 67px;
+}
+
+.custom-shape-divider-bottom-1705946508 .shape-fill {
+  fill: #FFFFFF;
+}
+.signup-heading{
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.signup-link-p{
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+}
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-bottom-1705946508 svg {
+      width: calc(100% + 1.3px);
+      height: 41px;
+  }
+}
+@keyframes example {
+  0% {
+    left: 15px;
+    top: 0px;
+  }
+
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
